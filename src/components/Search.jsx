@@ -24,7 +24,7 @@ export default function Search() {
   };
 
   return (
-    <>
+    <div className="search-container">
       <input
         type="text"
         id="search"
@@ -46,6 +46,6 @@ export default function Search() {
       <button onClick={onSearchHandler} type="button" id="search-button">
         Search
       </button>
-    </>
+    </div>
   );
 }

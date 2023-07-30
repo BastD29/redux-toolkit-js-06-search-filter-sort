@@ -1,0 +1,12 @@
+.items-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.item-container {
+  border: solid 1px black;
+  padding: 10px;
+  width: 300px;
+}

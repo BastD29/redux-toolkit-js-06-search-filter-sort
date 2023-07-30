@@ -1,6 +1,6 @@
 import { call, fork, put, takeLatest } from "redux-saga/effects";
 import { dataActions } from ".";
-import { GetCampaigns } from "../../services/campaigns.service";
+import { GetData } from "../../services/data.service";
 
 export const SAGA_FLOW_NAME = {
   GET_DATA: "GET_DATA",
@@ -10,7 +10,7 @@ function* getData() {
   try {
     yield put(dataActions.fetchDataRequest());
 
-    const data = yield call(GetCampaigns);
+    const data = yield call(GetData);
 
     yield put(dataActions.fetchDataSuccess(data));
   } catch (error) {

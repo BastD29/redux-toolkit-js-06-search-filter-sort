@@ -5,8 +5,7 @@ import { dataSagaActions, dataSelectors } from "../store/data";
 export default function CardPage() {
   const dispatch = useDispatch();
 
-  const data = useSelector(dataSelectors.getData);
-  console.log("data", data);
+  const data = useSelector(dataSelectors.selectFilteredData);
 
   useEffect(() => {
     dispatch(dataSagaActions.sagaGetData());

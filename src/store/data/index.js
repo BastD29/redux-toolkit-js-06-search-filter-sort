@@ -7,10 +7,6 @@ import {
 
 import { dataFlows as _dataFlows, dataSagas as _dataSagas } from "./sagas";
 
-// !Uncaught TypeError: _dataXXX is not iterable
-// const dataSagas = [..._dataSagas];
-// const dataFlows = [..._dataFlows];
-
 const dataSagas = _dataSagas;
 const dataFlows = _dataFlows;
 

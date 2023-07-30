@@ -1,7 +1,4 @@
-// export const GetCampaigns = async (): Promise<IApiResponse<ICampaign[]>> =>
-//   fetcher({ method: "get", url: CAMPAIGN });
-
-export const GetCampaigns = async () => ({
+export const GetData = async () => ({
   data: [
     {
       uuid: "some-uuid-1",
